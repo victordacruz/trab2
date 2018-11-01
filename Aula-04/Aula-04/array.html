@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css\estilo.css">
+	<title>HOME</title>
+</head>
+<body>
+	<section class="container">
+		<figure class="logo">Logotipo</figure>
+		<nav class="topo">
+			<a href="index.html">HOME</a>
+			<a href="#">HISTÓRIA</a>
+			<a href="#">PRODUTOS</a>
+			<a href="#">CADASTRO</a> 
+			<a href="#">CONTATO</a>
+		</nav>
+		<main>
+			<h1>Sintaxe básica de JavaScript - ARRAY</h1>
+        
+        <script type="text/javascript">
+
+        /* Sintaxe do array
+          var nome_array = ['valor0','valor01','valor02','valor03'];
+        */
+
+        var carros = ['fusca', 'kombi', 'corsa'];
+
+        document.write(carros);
+
+        document.write("<br/><br/>");
+
+        var frutas = ['pêra ', 'banana ', 'melancia ', 'abacate '];
+        document.write(frutas[2]);
+
+         document.write("<br/><br/>");
+          
+      //nome do objeto = new Array(quantidade_de_objetos);
+         diasemana = new Array(7);
+         diasemana[1] = 'Domingo';
+         diasemana[2] = 'Segunda';
+         diasemana[3] = 'Terça';
+         diasemana[4] = 'Quarta';
+         diasemana[5] = 'Quinta';         
+         diasemana[6] = 'Sexta';
+         diasemana[7] = 'Sábado';
+
+         document.write(diasemana[4]);
+
+      document.write("<br/><br/>");
+
+      cidade=new Array(6);
+      cidade[0]="Rio de Janeiro";
+      cidade[1]="Duque de Caxias";
+      cidade[2]="Nova Iguaçu";
+      cidade[3]="Niterói";
+      cidade[4]="São Gonçalo";
+      cidade[5]="Vilar dos Teles";
+
+      document.write(cidade[2]);
+
+      function matriz(){
+        var cid = document.formulario.numero.value;
+
+        if(cid>5){
+          alert("NÚMERO INVÁLIDO!!");
+        }else{
+          alert(cidade[cid]);
+        }
+      }
+     </script>     
+
+     <p>Digite um número de 0 a 5: </p>
+
+     <form name="formulario">
+      <input type="text" size=3 name="numero">
+      <input type="button" value="digite um valor" onClick=matriz()>       
+     </form>
+
+		</main>
+	</section>
+</body>
+</html>

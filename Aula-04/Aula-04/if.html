@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css\estilo.css">
+	<title>HOME</title>
+</head>
+<body>
+	<section class="container">
+		<figure class="logo">Logotipo</figure>
+		<nav class="topo">
+			<a href="index.html">HOME</a>
+			<a href="#">HISTÓRIA</a>
+			<a href="#">PRODUTOS</a>
+			<a href="#">CADASTRO</a> 
+			<a href="#">CONTATO</a>
+		</nav>
+		<main>
+			<h1>Sintaxe básica de JavaScript - IF - SIMPLES</h1>
+
+              <script type="text/javascript">        	
+          
+               //Declarando a variável "valor"
+                var valor;
+
+               //Atribuição de valor
+                valor = 5;
+
+                /*Sintaxe do coomando IF SIMPLES
+                  
+                  if(lógica){
+                      mensagem_verdadeiro;
+                  }
+
+                */
+                if(valor == 5){
+                      document.write("<p>A variável VALOR é: " + valor + "</p>");
+                }
+              </script>
+
+          <h1>Sintaxe básica de JavaScript - IF - COMPOSTO</h1>
+
+          <script type="text/javascript">         
+          
+               //Declarando a variável "valor"
+                var x;
+
+               //Atribuição de valor
+                x = 5;
+
+                /*Sintaxe do coomando IF COMPOSTO
+                  
+                  if(lógica){
+                      mensagem_verdadeiro;
+                  }else{
+                      mensagem_falso;
+                  }
+                */
+
+                if(x == 1){
+                      document.write("<p>A variável X é: " + x + "</p>");
+                }else{
+                     document.write("<p>ENTÃO o valor de X correto é:  " + x + "</p>");
+                }
+            </script>
+
+             <h1>Sintaxe básica de JavaScript - IF - OPERADORES</h1>
+
+          <script type="text/javascript">
+             /*Crie um algoritmo para ler a idade de uma pessoa
+               e imprimir a mensagem "Você é maior de idade" 
+               se for acima de 18 anos*/
+          
+          var idade=window.prompt("Digite a sua idade: ");
+
+          if(idade>=18){
+              document.write("Você já pode ser preso em Bangu");
+          }else{
+              document.write("Você vai detido no  Padre Severino");
+          }
+          </script>
+       
+           <h1>EXERCÍCIO DE LÓGICA</h1>
+          <script type="text/javascript">
+            /*Crie um algoritmo para ler um número e dizer se ele é PAR ou IMPAR*/
+          
+          var numero=window.prompt("Digite um número");
+          var resto=(numero%2);
+
+          /*O sinal de % significa mod : resto de uma divisão*/
+
+          document.write("O resto da divisão é: "+" "+resto+"<br/> " );
+
+          if(resto==0){
+            document.write("Este número é PAR!");
+          }else{
+            document.write("Este número é IMPAR!");
+          }
+
+          </script>                               
+
+		</main>
+	</section>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

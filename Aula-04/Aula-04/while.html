@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css\estilo.css">
+	<title>HOME</title>
+</head>
+<body>
+	<section class="container">
+		<figure class="logo">Logotipo</figure>
+		<nav class="topo">
+			<a href="index.html">HOME</a>
+			<a href="#">HISTÓRIA</a>
+			<a href="#">PRODUTOS</a>
+			<a href="#">CADASTRO</a> 
+			<a href="#">CONTATO</a>
+		</nav>
+		<main>
+			<h1>Sintaxe básica de JavaScript - LOOP DE REPETIÇÃO - WHILE</h1>
+        
+        <script type="text/javascript">
+
+            /*
+            valor inicial
+            variavel = 0;
+
+             Sintaxe  do WHILE
+             while(valor_final){
+                  document.write("saída de dados");
+                  incremento ou decremento;
+             }
+          */
+           document.write("<h3>Algoritmo-01 - WHILE</h3>");
+           //Declarando a variável - valor_inicial
+          var linha   = 1;
+          var linha02 = 10; 
+
+          //Criando a estrutura do while - (valor_final)
+          while(linha<=10){
+            document.write("O valor da linha é: "+linha+" <br/>"); //saída de dados
+          linha++;  //incremento ou decremento
+          }
+          /
+/////////////////////////////////////////////////////////////////////////////////////////////
+          document.write("<br/><br/>");
+
+          document.write("<h3>Algoritmo-02 - WHILE</h3>");
+
+           //Criando a estrutura do while - (valor_final)
+          while(linha02>=1){
+            document.write("O valor da linha é: "+linha02+" <br/>"); //saída de dados
+          linha02--;  //incremento ou decremento
+          }
+
+          /*
+////////////////////////////////////////////////////////////////////////////////////////////
+
+          document.write("<br/><br/>");
+     
+          document.write("<h3>Algoritmo-03 - WHILE</h3>");
+          document.write("<p>Crie um algoritmo que, enquanto o usuário não digitar 0, o programa continuará</p>");
+          document.write("<p>a solicitar números para serem calculados para adição</p>");
+
+          //Declarando a variável
+          var numerox = prompt("Digite um número");
+          numerox=parseFloat(numerox);
+
+          document.write ("Este é o número digitado: " + numerox + "<br/>");
+
+          
+
+          var contador=0;
+
+          while(contador<10){
+              contador=contador++;
+              var somatorio = numerox + contador; 
+              somatorio=parseFloat(somatorio);
+              document.write("Este é o valor da soma: " + somatorio + "<br/>");
+          }
+          
+
+  /////////////////////////////////////////////////////////////////////////////////////////////
+   </script>
+
+		</main>
+	</section>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css\estilo.css">
+	<title>HOME</title>
+</head>
+<body>
+	<section class="container">
+		<figure class="logo">Logotipo</figure>
+		<nav class="topo">
+			<a href="index.html">HOME</a>
+			<a href="#">HISTÓRIA</a>
+			<a href="#">PRODUTOS</a>
+			<a href="#">CADASTRO</a> 
+			<a href="#">CONTATO</a>
+		</nav>
+		<main>
+			<h1>Sintaxe básica de JavaScript - LOOP DE REPETIÇÃO - WHILE</h1>
+        
+        <script type="text/javascript">
+
+          //Declarando variável
+          var numeroz = prompt("Digite um número");
+          numeroz=parseFloat(numeroz);
+          
+          //Imprimindo 
+          document.write("Este é o número digitado: " + " " +numeroz+ " " + "<br/>");
+
+          var contador=0;
+
+          while(contador<10){
+              contador = contador+1;  //contador = contador++
+              var mult=numeroz*contador;
+              numeroz=parseFloat(numeroz);
+              document.write("O número digitado é: "+ numeroz + " é resultado da multiplicação: " +mult+ "<br/>");
+               }
+          
+
+     </script>     
+
+		</main>
+	</section>
+</body>
+</html>
